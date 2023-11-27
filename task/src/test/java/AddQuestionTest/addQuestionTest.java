@@ -1,8 +1,13 @@
 package AddQuestionTest;
 import Pages.addQuestionPage;
+import Pages.viewQuestionPage;
 import Pages.logInPage;
 import baseTest.baseTest;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import static org.testng.Assert.assertEquals;
 
 public class addQuestionTest extends baseTest{
     @Test
@@ -35,7 +40,7 @@ public class addQuestionTest extends baseTest{
         addQuestionPage.Classification();
         addQuestionPage.selectClassification("اتاحية الأدوية");
         addQuestionPage.set1Letters("n");
-        Thread.sleep(5000);
+        Thread.sleep(7000);
         addQuestionPage.selectDrug();
         Thread.sleep(2000);
         //addQuestionPage.clickBlank();
@@ -43,7 +48,12 @@ public class addQuestionTest extends baseTest{
         addQuestionPage.setQuestionTitle("a question about a drug");
         addQuestionPage.setQuestion("what is the effect of this drug");
         addQuestionPage.scrollDown();
-        addQuestionPage.clickSave();
+        viewQuestionPage v = addQuestionPage.clickSave();
+        Thread.sleep(4000);
+        //Assert.assertTrue(v.getAlertMessage().contains("a question about a drug"));
+       assertEquals(v.getAlertMessage() , "a question about a drug","you are redirected to wrong page");
+
+
     }
 
 

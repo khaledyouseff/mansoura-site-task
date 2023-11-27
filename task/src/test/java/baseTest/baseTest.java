@@ -1,9 +1,6 @@
 package baseTest;
 
-import Pages.addQuestionPage;
-import Pages.logInPage;
-import Pages.mainPage;
-import Pages.welcomePage;
+import Pages.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -16,6 +13,7 @@ protected mainPage mainPage = new mainPage(driver) ;
 protected logInPage logInPage = new logInPage(driver);
 protected welcomePage welcomePage = new welcomePage(driver);
  protected addQuestionPage addQuestionPage = new addQuestionPage(driver);
+ protected viewQuestionPage viewQuestionPage = new viewQuestionPage(driver);
 @BeforeClass
     public void setup(){
     WebDriverManager.chromedriver().setup();
@@ -25,8 +23,8 @@ protected welcomePage welcomePage = new welcomePage(driver);
     logInPage=new logInPage(driver);
     mainPage = new mainPage(driver);
     welcomePage = new welcomePage(driver);
-   addQuestionPage=new addQuestionPage(driver);
-
+    addQuestionPage=new addQuestionPage(driver);
+    viewQuestionPage=new viewQuestionPage(driver);
 }
 
 }

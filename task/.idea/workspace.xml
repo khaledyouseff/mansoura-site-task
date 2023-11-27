@@ -36,7 +36,8 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;last_opened_file_path&quot;: &quot;E:/valeo prepration/iti studying/testing/automation/Task/mansoura-site-task/task&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;E:/valeo prepration/iti studying/testing/automation/Task/src/main/java/org/example/Main.java&quot;
+    &quot;onboarding.tips.debug.path&quot;: &quot;E:/valeo prepration/iti studying/testing/automation/Task/src/main/java/org/example/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -45,6 +46,16 @@
     </key>
   </component>
   <component name="RunManager" selected="TestNG.addQuestionTest.accessQuestionPage">
+    <configuration name="E:/valeo prepration/iti studying/testing/automation/Task/mansoura-site-task/task/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Task" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="addQuestionTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Task" />
       <extension name="coverage">
@@ -91,35 +102,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="welcomeTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="logInTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Task" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="welcomPage.*" />
+          <option name="PATTERN" value="logInTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="logInTest" />
-      <option name="MAIN_CLASS_NAME" value="welcomPage.welcomeTest" />
+      <option name="MAIN_CLASS_NAME" value="logInTest.logInTest" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="welcomeTest.accessQuestionPage" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Task" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="welcomPage.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="welcomPage" />
-      <option name="MAIN_CLASS_NAME" value="welcomPage.welcomeTest" />
-      <option name="METHOD_NAME" value="accessQuestionPage" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -129,10 +122,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.addQuestionTest.accessQuestionPage" />
+        <item itemvalue="TestNG.E:/valeo prepration/iti studying/testing/automation/Task/mansoura-site-task/task/testng.xml" />
+        <item itemvalue="TestNG.logInTest" />
         <item itemvalue="TestNG.addQuestionTest (1)" />
         <item itemvalue="TestNG.addQuestionTest" />
-        <item itemvalue="TestNG.welcomeTest" />
-        <item itemvalue="TestNG.welcomeTest.accessQuestionPage" />
       </list>
     </recent_temporary>
   </component>
@@ -146,5 +139,9 @@
       <updated>1701035460609</updated>
     </task>
     <servers />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

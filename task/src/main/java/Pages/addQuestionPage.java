@@ -16,17 +16,22 @@ public class addQuestionPage {
         this.driver = driver;
     }
 
-    By requestMethod = By.xpath("//*[@id=\"AppsContent\"]/div/div/div/form/div/div/div[1]/div/div/div/div[1]/div/div/div[1]");
-    By requester = By.xpath("//*[@id=\"AppsContent\"]/div/div/div/form/div/div/div[1]/div/div/div/div[3]/div/div/div[1]");
+
+    By requestMethod = By.xpath("//*[@id=\"AppsContent\"]/div/div/div/form/div/div/div[1]/div/div/div/div[1]/div/div/div[1]/div[1]/div[1]");
+    By getRequestMethodOption =By.xpath("//*[@id=\"list-item-199-0\"]/div/div");
+    By requester = By.xpath("//*[@id=\"input-75\"]");
+    By requesterOption = By.xpath("//*[@id=\"list-item-209-0\"]/div/div");
     By organization = By.xpath("//*[@id=\"AppsContent\"]/div/div/div/form/div/div/div[2]/div/div/div[1]/div[1]/div/div/div[1]/div[1]/div[1]");
-    By department = By.xpath("//*[@id=\"AppsContent\"]/div/div/div/form/div/div/div[2]/div/div/div[1]/div[3]/div/div/div[1]/div[1]/div[1]");
+    By organizationOption = By.xpath("//*[@id=\"list-item-233-0\"]/div/div");
+    By department =By.xpath("//*[@id=\"AppsContent\"]/div/div/div/form/div/div/div[2]/div/div/div[1]/div[3]");
     By classification = By.xpath("//*[@id=\"AppsContent\"]/div/div/div/form/div/div/div[2]/div/div/div[1]/div[5]/div/div/div[1]/div[1]/div[1]");
-    By questionDate = By.xpath("//*[@id=\"input-449\"]");
-    By questionTime = By.xpath("//*[@id=\"input-455\"]");
-    By drug = By.id("input-472");
-    By questionTitle = By.id("input-488");
-    By question = By.id("input-492");
-    By diagnose = By.id("input-931");
+   // By questionDate = By.xpath("//*[@id=\"input-449\"]");
+   // By questionTime = By.xpath("//*[@id=\"input-455\"]");
+    By drug = By.xpath("/html/body/div[1]/div/div/main/div/div/div[2]/div/div/div/form/div/div/div[3]/div/div/div[1]/div[1]/div/div/div[1]/div[1]/div[1]/input");
+    By drugOption =By.xpath("/html/body/div[1]/div/div[7]/div/div[1]/div[2]/div");
+    By questionTitle = By.xpath("/html/body/div[1]/div/div[1]/main/div/div/div[2]/div/div/div/form/div/div/div[3]/div/div/div[3]/div/div/div/div[1]/div[1]/input");
+    By question = By.xpath("/html/body/div[1]/div/div[1]/main/div/div/div[2]/div/div/div/form/div/div/div[3]/div/div/div[4]/div/div/div/div[1]/div[1]/textarea");
+    By save = By.xpath("/html/body/div[1]/div/div[1]/main/div/div/div[2]/div/div/div/div/div[1]/button");
 
 
 //---------------------------------------------------------------
@@ -34,8 +39,8 @@ public class addQuestionPage {
 //---------------------------------------------------------------
 
 public void  requestMethod(){
-    driver.findElement(By.xpath("//*[@id=\"AppsContent\"]/div/div/div/form/div/div/div[1]/div/div/div/div[1]/div/div/div[1]/div[1]/div[1]")).click();
-    driver.findElement(By.xpath("//*[@id=\"list-item-199-0\"]/div/div")).click();
+    driver.findElement(requestMethod).click();
+    driver.findElement(getRequestMethodOption).click();
     }
 
 
@@ -44,17 +49,17 @@ public void  requestMethod(){
 //---------------------------------------------------------------
 
     public void set3Letters(String letters){
-    driver.findElement(By.xpath("//*[@id=\"input-75\"]")).sendKeys(letters);
+    driver.findElement(requester).sendKeys(letters);
 }
     public void  requester(){
-        driver.findElement(By.xpath("//*[@id=\"list-item-209-0\"]/div/div")).click();
+        driver.findElement(requesterOption).click();
     }
 //---------------------------------------------------------------
     //select from organization
 //---------------------------------------------------------------
 public void  organization(){
-    driver.findElement(By.xpath("//*[@id=\"AppsContent\"]/div/div/div/form/div/div/div[2]/div/div/div[1]/div[1]/div/div/div[1]/div[1]/div[1]")).click();
-    driver.findElement(By.xpath("//*[@id=\"list-item-233-0\"]/div/div")).click();
+    driver.findElement(organization).click();
+    driver.findElement(organizationOption).click();
 }
 
 
@@ -64,7 +69,7 @@ public void  organization(){
 //---------------------------------------------------------------
 
     public void  department() {
-        driver.findElement(By.xpath("//*[@id=\"AppsContent\"]/div/div/div/form/div/div/div[2]/div/div/div[1]/div[3]")).click();
+        driver.findElement(department).click();
         // driver.findElement(By.xpath("/html/body/div[1]/div/div[3]/div/div[1]/div/div")).click();
 
     }
@@ -77,7 +82,7 @@ public void  organization(){
     //select from Classification
 //---------------------------------------------------------------
 public void  Classification() {
-    driver.findElement(By.xpath("//*[@id=\"AppsContent\"]/div/div/div/form/div/div/div[2]/div/div/div[1]/div[5]/div/div/div[1]/div[1]/div[1]")).click();
+    driver.findElement(classification).click();
    // driver.findElement(By.xpath("/html/body/div[1]/div/div[4]/div/div[1]/div/div")).click();
 }
 
@@ -93,22 +98,20 @@ public void  Classification() {
 //---------------------------------------------------------------
 
     public void set1Letters(String letter){
-        driver.findElement(By.xpath("/html/body/div[1]/div/div/main/div/div/div[2]/div/div/div/form/div/div/div[3]/div/div/div[1]/div[1]/div/div/div[1]/div[1]/div[1]/input")).sendKeys(letter);
+        driver.findElement(drug).sendKeys(letter);
     }
     public void selectDrug(){
-        driver.findElement(By.xpath("/html/body/div[1]/div/div[7]/div/div[1]/div[2]/div")).click();
+        driver.findElement(drugOption).click();
     }
 
-public void clickBlank(){
-        driver.findElement(By.xpath("/html/body/div[1]/div/div[1]/main/div/div/div[2]/div")).click();
-}
+
 //---------------------------------------------------------------
     //type into question title
 //---------------------------------------------------------------
 
 
     public void setQuestionTitle(String title1) {
-        driver.findElement(By.xpath("/html/body/div[1]/div/div[1]/main/div/div/div[2]/div/div/div/form/div/div/div[3]/div/div/div[3]/div/div/div/div[1]/div[1]/input")).sendKeys(title1);
+        driver.findElement(questionTitle).sendKeys(title1);
  }
 
 //---------------------------------------------------------------
@@ -117,23 +120,17 @@ public void clickBlank(){
 
 
     public void setQuestion(String title2) {
-        driver.findElement(By.xpath("/html/body/div[1]/div/div[1]/main/div/div/div[2]/div/div/div/form/div/div/div[3]/div/div/div[4]/div/div/div/div[1]/div[1]/textarea")).sendKeys(title2);
-    }
-//---------------------------------------------------------------
-//type into question
-//---------------------------------------------------------------
-
-
-    public void setDiagnose(String Diagnose) {
-        driver.findElement(diagnose).sendKeys(Diagnose);
+        driver.findElement(question).sendKeys(title2);
     }
 
+
 //---------------------------------------------------------------
-//type into question
+//click save
 //---------------------------------------------------------------
 
-    public void clickSave(){
-    driver.findElement(By.xpath("/html/body/div[1]/div/div[1]/main/div/div/div[2]/div/div/div/div/div[1]/button")).click();
+    public viewQuestionPage clickSave(){
+    driver.findElement(save).click();
+    return new viewQuestionPage(driver);
     }
 
 //---------------------------------------------------------------
