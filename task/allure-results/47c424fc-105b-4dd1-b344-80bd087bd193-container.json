@@ -1,0 +1,1 @@
+{"uuid":"47c424fc-105b-4dd1-b344-80bd087bd193","name":"welcomPage.welcomeTest","children":["5447741d-098d-484b-ae07-5a704dee1339"],"befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1701043667213,"stop":1701043678759}],"afters":[],"start":1701043667155,"stop":1701043679445}
