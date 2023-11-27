@@ -38,7 +38,12 @@ public class addQuestionTest extends baseTest{
         Thread.sleep(5000);
         addQuestionPage.selectDrug();
         Thread.sleep(2000);
-        addQuestionPage.clickBlank();
+        //addQuestionPage.clickBlank();
+        addQuestionPage.scrollDown();
+        addQuestionPage.setQuestionTitle("a question about a drug");
+        addQuestionPage.setQuestion("what is the effect of this drug");
+        addQuestionPage.scrollDown();
+        addQuestionPage.clickSave();
     }
 
 

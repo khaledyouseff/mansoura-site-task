@@ -1,6 +1,7 @@
 package Pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -107,7 +108,7 @@ public void clickBlank(){
 
 
     public void setQuestionTitle(String title1) {
-        driver.findElement(questionTitle).sendKeys(title1);
+        driver.findElement(By.xpath("/html/body/div[1]/div/div[1]/main/div/div/div[2]/div/div/div/form/div/div/div[3]/div/div/div[3]/div/div/div/div[1]/div[1]/input")).sendKeys(title1);
  }
 
 //---------------------------------------------------------------
@@ -116,7 +117,7 @@ public void clickBlank(){
 
 
     public void setQuestion(String title2) {
-        driver.findElement(question).sendKeys(title2);
+        driver.findElement(By.xpath("/html/body/div[1]/div/div[1]/main/div/div/div[2]/div/div/div/form/div/div/div[3]/div/div/div[4]/div/div/div/div[1]/div[1]/textarea")).sendKeys(title2);
     }
 //---------------------------------------------------------------
 //type into question
@@ -127,9 +128,22 @@ public void clickBlank(){
         driver.findElement(diagnose).sendKeys(Diagnose);
     }
 
+//---------------------------------------------------------------
+//type into question
+//---------------------------------------------------------------
 
+    public void clickSave(){
+    driver.findElement(By.xpath("/html/body/div[1]/div/div[1]/main/div/div/div[2]/div/div/div/div/div[1]/button")).click();
+    }
 
+//---------------------------------------------------------------
+//scroll down
+//---------------------------------------------------------------
 
+public void scrollDown(){
+    JavascriptExecutor js = (JavascriptExecutor)driver;
+    js.executeScript("scrollBy(0,500)");
+}
 
 
 
