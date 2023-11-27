@@ -51,114 +51,55 @@ public void  requestMethod(){
 //---------------------------------------------------------------
     //select from organization
 //---------------------------------------------------------------
+public void  organization(){
+    driver.findElement(By.xpath("//*[@id=\"AppsContent\"]/div/div/div/form/div/div/div[2]/div/div/div[1]/div[1]/div/div/div[1]/div[1]/div[1]")).click();
+    driver.findElement(By.xpath("//*[@id=\"list-item-233-0\"]/div/div")).click();
+}
 
-    public void findOrganizationDropdown() {
-        driver.findElement(organization);
-    }
 
-    private Select findOrganization() {
-        return new Select (driver.findElement(organization));
-    }
 
-    public void selectOrganization(String option3){
-        findOrganization().selectByVisibleText(option3);
-    }
-    public List<String> getSelectedOrganization(){
-        List<WebElement> selectedElement=
-                findOrganization().getAllSelectedOptions();
-        return selectedElement.stream().map(e->e.getText()).collect(Collectors.toList());
-
-    }
 //---------------------------------------------------------------
     //select from department
 //---------------------------------------------------------------
 
-    public void findDepartmentDropdown() {
-        driver.findElement(department);
-    }
-
-    private Select findDepartment() {
-        return new Select (driver.findElement(department));
-    }
-
-    public void selectDepartment(String option4){
-        findDepartment().selectByVisibleText(option4);
-    }
-    public List<String> getSelectedDepartment(){
-        List<WebElement> selectedElement=
-                findDepartment().getAllSelectedOptions();
-        return selectedElement.stream().map(e->e.getText()).collect(Collectors.toList());
+    public void  department() {
+        driver.findElement(By.xpath("//*[@id=\"AppsContent\"]/div/div/div/form/div/div/div[2]/div/div/div[1]/div[3]")).click();
+        // driver.findElement(By.xpath("/html/body/div[1]/div/div[3]/div/div[1]/div/div")).click();
 
     }
+   public void selectDepartment(String optionText){
+       driver.findElement(By.xpath("//div[text()='" + optionText + "']")).click();
+   }
+
+
 //---------------------------------------------------------------
     //select from Classification
 //---------------------------------------------------------------
-
-    public void findClassificationDropdown() {
-        driver.findElement(classification);
-    }
-
-    private Select findClassification() {
-        return new Select (driver.findElement(classification));
-    }
-
-    public void selectClassification(String option5){
-        findClassification().selectByVisibleText(option5);
-    }
-    public List<String> getSelectedClassification(){
-        List<WebElement> selectedElement=
-                findClassification().getAllSelectedOptions();
-        return selectedElement.stream().map(e->e.getText()).collect(Collectors.toList());
-
-    }
-//---------------------------------------------------------------
-    //select Question date
-//---------------------------------------------------------------
-public void clickQuestionDate(){
-        driver.findElement(questionDate).click();
-}
-public void clickDay(){
-        driver.findElement(By.xpath("//*[@id=\"app\"]/div[9]/div/div/div/div[2]/table/tbody/tr[1]/td[5]/button")).click();
-
+public void  Classification() {
+    driver.findElement(By.xpath("//*[@id=\"AppsContent\"]/div/div/div/form/div/div/div[2]/div/div/div[1]/div[5]/div/div/div[1]/div[1]/div[1]")).click();
+   // driver.findElement(By.xpath("/html/body/div[1]/div/div[4]/div/div[1]/div/div")).click();
 }
 
-//---------------------------------------------------------------
-    //select question time
-//---------------------------------------------------------------
-public void clickTime(){
-        driver.findElement(questionTime).click();
-}
-public void chooseHour(){
-        driver.findElement(By.xpath("//*[@id=\"app\"]/div[10]/div/div[2]/div/div/div/span[2]")).click();
-}
+    public void selectClassification(String optionText){
+        driver.findElement(By.xpath("//div[text()='" + optionText + "']")).click();
+    }
+
+
+
 
 //---------------------------------------------------------------
     //select from drug
 //---------------------------------------------------------------
 
-    public void findDrugDropdown() {
-        driver.findElement(drug);
+    public void set1Letters(String letter){
+        driver.findElement(By.xpath("/html/body/div[1]/div/div/main/div/div/div[2]/div/div/div/form/div/div/div[3]/div/div/div[1]/div[1]/div/div/div[1]/div[1]/div[1]/input")).sendKeys(letter);
+    }
+    public void selectDrug(){
+        driver.findElement(By.xpath("/html/body/div[1]/div/div[7]/div/div[1]/div[2]/div")).click();
     }
 
-    public void set1letters(String letter) {
-        driver.findElement(drug).sendKeys(letter);
-    }
-
-    private Select findDrug() {
-        return new Select(driver.findElement(requester));
-    }
-
-    public void selectDrug(String option6){
-        findDrug().selectByVisibleText(option6);
-    }
-    public List<String> getSelectedDrug(){
-        List<WebElement> selectedElement=
-                findDrug().getAllSelectedOptions();
-        return selectedElement.stream().map(e->e.getText()).collect(Collectors.toList());
-
-    }
 public void clickBlank(){
-        driver.findElement(By.xpath("//*[@id=\"AppsContent\"]/div")).click();
+        driver.findElement(By.xpath("/html/body/div[1]/div/div[1]/main/div/div/div[2]/div")).click();
 }
 //---------------------------------------------------------------
     //type into question title

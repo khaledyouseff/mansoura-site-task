@@ -28,7 +28,17 @@ public class addQuestionTest extends baseTest{
         addQuestionPage.set3Letters("احم");
         Thread.sleep(2000);
         addQuestionPage.requester();
-
+        addQuestionPage.organization();
+        Thread.sleep(2000);
+        addQuestionPage.department();
+        addQuestionPage.selectDepartment("Emergency surgery unit");
+        addQuestionPage.Classification();
+        addQuestionPage.selectClassification("اتاحية الأدوية");
+        addQuestionPage.set1Letters("n");
+        Thread.sleep(5000);
+        addQuestionPage.selectDrug();
+        Thread.sleep(2000);
+        addQuestionPage.clickBlank();
     }
 
 
