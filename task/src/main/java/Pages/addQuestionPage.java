@@ -33,39 +33,20 @@ public class addQuestionPage {
 //---------------------------------------------------------------
 
 public void  requestMethod(){
-    driver.findElement(By.xpath("//*[@id=\"AppsContent\"]/div/div/div/form/div/div/div[1]/div/div/div/div[1]")).click();
+    driver.findElement(By.xpath("//*[@id=\"AppsContent\"]/div/div/div/form/div/div/div[1]/div/div/div/div[1]/div/div/div[1]/div[1]/div[1]")).click();
+    driver.findElement(By.xpath("//*[@id=\"list-item-199-0\"]/div/div")).click();
     }
-
-
-
-
-
 
 
 //---------------------------------------------------------------
     //select from requester
 //---------------------------------------------------------------
 
-    public void findRequesterDropdown() {
-        driver.findElement(requester);
-    }
-
-    public void set3letters(String letters) {
-       driver.findElement(requester).sendKeys(letters);
-    }
-
-    private Select findRequester() {
-        return new Select(driver.findElement(requester));
-    }
-
-    public void selectRequester(String option2){
-        findRequester().selectByVisibleText(option2);
-    }
-    public List<String> getSelectedRequester(){
-        List<WebElement> selectedElement=
-                findRequester().getAllSelectedOptions();
-        return selectedElement.stream().map(e->e.getText()).collect(Collectors.toList());
-
+    public void set3Letters(String letters){
+    driver.findElement(By.xpath("//*[@id=\"input-75\"]")).sendKeys(letters);
+}
+    public void  requester(){
+        driver.findElement(By.xpath("//*[@id=\"list-item-209-0\"]/div/div")).click();
     }
 //---------------------------------------------------------------
     //select from organization

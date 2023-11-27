@@ -25,6 +25,9 @@ public class addQuestionTest extends baseTest{
 // add question data
 
         addQuestionPage.requestMethod();
+        addQuestionPage.set3Letters("احم");
+        Thread.sleep(2000);
+        addQuestionPage.requester();
 
     }
 

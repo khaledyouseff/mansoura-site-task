@@ -73,17 +73,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="logInTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="addQuestionTest.accessQuestionPage" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Task" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="welcomPage.*" />
+          <option name="PATTERN" value="AddQuestionTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="logInTest" />
-      <option name="MAIN_CLASS_NAME" value="logInTest.logInTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PACKAGE_NAME" value="AddQuestionTest" />
+      <option name="MAIN_CLASS_NAME" value="AddQuestionTest.addQuestionTest" />
+      <option name="METHOD_NAME" value="accessQuestionPage" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -128,10 +129,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.addQuestionTest (1)" />
+        <item itemvalue="TestNG.addQuestionTest.accessQuestionPage" />
         <item itemvalue="TestNG.addQuestionTest" />
         <item itemvalue="TestNG.welcomeTest" />
         <item itemvalue="TestNG.welcomeTest.accessQuestionPage" />
-        <item itemvalue="TestNG.logInTest" />
       </list>
     </recent_temporary>
   </component>
