@@ -1,5 +1,6 @@
 package baseTest;
 
+import Pages.addQuestionPage;
 import Pages.logInPage;
 import Pages.mainPage;
 import Pages.welcomePage;
@@ -14,7 +15,7 @@ protected WebDriver driver;
 protected mainPage mainPage = new mainPage(driver) ;
 protected logInPage logInPage = new logInPage(driver);
 protected welcomePage welcomePage = new welcomePage(driver);
-
+ protected addQuestionPage addQuestionPage = new addQuestionPage(driver);
 @BeforeClass
     public void setup(){
     WebDriverManager.chromedriver().setup();
@@ -24,7 +25,7 @@ protected welcomePage welcomePage = new welcomePage(driver);
     logInPage=new logInPage(driver);
     mainPage = new mainPage(driver);
     welcomePage = new welcomePage(driver);
-
+   addQuestionPage=new addQuestionPage(driver);
 
 }
 

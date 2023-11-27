@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc273ea3-f980-4f4b-97d4-dcdb74de7b56" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/addQuestionPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/logInPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/mainPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/welcomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/addQuestionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/baseTest/baseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/logInTest/logInTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/welcomPage/welcomeTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="bc273ea3-f980-4f4b-97d4-dcdb74de7b56" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,7 +18,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -45,25 +29,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;E:/valeo prepration/iti studying/testing/automation/Task/src/main/java/org/example/Main.java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "E:/valeo prepration/iti studying/testing/automation/Task/mansoura-site-task/task",
+    "onboarding.tips.debug.path": "E:/valeo prepration/iti studying/testing/automation/Task/src/main/java/org/example/Main.java"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="logInTest" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.addQuestionTest">
+  <component name="RunManager" selected="TestNG.addQuestionTest (1)">
+    <configuration name="addQuestionTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Task" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AddQuestionTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="AddQuestionTest" />
+      <option name="MAIN_CLASS_NAME" value="AddQuestionTest.addQuestionTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="addQuestionTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Task" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="addQuestionTest" />
+      <option name="MAIN_CLASS_NAME" value="clickAddQuestionIcon.addQuestionTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -82,24 +84,6 @@
       <option name="PACKAGE_NAME" value="logInTest" />
       <option name="MAIN_CLASS_NAME" value="logInTest.logInTest" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="logInTest.successfulLoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Task" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="welcomPage.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="logInTest" />
-      <option name="MAIN_CLASS_NAME" value="logInTest.logInTest" />
-      <option name="METHOD_NAME" value="successfulLoginTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -143,11 +127,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.addQuestionTest (1)" />
         <item itemvalue="TestNG.addQuestionTest" />
         <item itemvalue="TestNG.welcomeTest" />
         <item itemvalue="TestNG.welcomeTest.accessQuestionPage" />
         <item itemvalue="TestNG.logInTest" />
-        <item itemvalue="TestNG.logInTest.successfulLoginTest" />
       </list>
     </recent_temporary>
   </component>
